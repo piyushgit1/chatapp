@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Chat Rooms</title>
+</head>
+<body>
+    Enter your username?<br>
+    <br>
+    Username:<input id="Username-input" type="text" size="100"><br>
+
+    <br>
+    Enter the room_name with whom u want to chat?
+    <br>
+    <br>
+    Room_name:<input id="room-name-input" type="text" size="100"><br>
+
+    <br>
+
+    <button type="submit" id="submit">Submit</button>
+
+    <script>
+
+
+        document.querySelector('#submit').onclick = function(e) {
+            var roomName = document.querySelector('#room-name-input').value;
+            var userName = document.querySelector('#Username-input').value;
+            window.location.pathname = '/mapp/'+ userName + '/' + roomName + '/';
+        };
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,13 @@
+django==2.2.8
+djangorestframework==3.11
+psycopg2
+Pillow
+django-sms-gateway
+django-otp
+twilio
+channels
+consumers
+channels_redis
+gunicorn
+daphne
+django-cors-headers
